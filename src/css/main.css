@@ -1,0 +1,269 @@
+ /* Header */
+
+.container {
+    max-width: 75rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    height: 6.25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+}
+
+ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.userIcon {
+    border: 1px solid #3F3F3F;
+    background-color: #F2FAF9;
+    border-radius: 50%;
+    padding: 0.5rem;;
+}
+
+.userIcon:hover{
+    background-color: #1b665d;
+}
+
+.userIcon:hover svg {
+    color: #fff;
+}
+
+.userIcon img {
+    height: 0.875rem;
+    width: 0.875rem;
+    position: relative;
+    top: 0.0625rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1b665d;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-image: linear-gradient(black, grey);
+    background-image: url("../images/Hero-section.png"), linear-gradient(to right, #000B02, #2F2E36 40%);
+    background-position: right;
+    background-repeat: no-repeat;
+    /* height: 31.25rem; */
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.hero-section-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    justify-content: center;
+    height: 100%;
+    max-width: 34rem;
+    width: 100%;
+}
+
+
+.hero-section-text h1 {
+    font-size: 2.75rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.hero-section-text span {
+    color: #F5B963;
+}
+
+.hero-section-text p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+.hero-section-user-photo img {
+    margin-right: -0.8125rem;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section-user-photo img:hover {
+    z-index: 10;
+}
+
+.hero-section-social-media {
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.rating {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.rating-text p{
+    color: #fff;
+    padding: 0.25rem;
+}
+
+
+/* Cabin cards section */
+
+.cabin-cards-section {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.cabin-cards-text p {
+    color: #47475F;
+}
+
+.cabin-cards-text a {
+    color: #4A4A4A;
+    text-decoration: underline;
+}
+
+.cabin-cards-text a:hover {
+    text-decoration: none;
+}
+
+h3.subtitle {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #22223C;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle::after {
+ content: '';
+ position: relative;
+ display: block;
+ width: 122px;
+ height: 2px;
+ background-color: #F5B963;
+ margin-top: 0.5rem
+}
+
+.cabin-cards-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 3rem;
+}
+
+.cabin-card-image {
+    position: relative;
+}
+
+.cabin-card-image img {
+    width: 100%;
+}
+
+.heart {
+    background-color: #000;
+    opacity: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.cabin-card {
+    background-color: #2B3030;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
+
+.cabin-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.city {
+    color: #D7FFF1;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.caption {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.price {
+    color: #fff;
+    font-weight: 600;
+}
+
+.description {
+    color: #E0F2EB;
+    font-size: 0.875;
+    margin: 1.25rem 0;
+    line-height: 1.25rem;
+    flex: 1;
+}
+
+
+.rating-section p {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 0.875rem;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabin-card-text {
+    padding: 0.8125rem 1.124rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+@media screen and (max-width: 720px) {
+    .cabin-cards {
+        flex-direction: column;
+        
+    }
+
+    .container {
+        padding:0 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+}
