@@ -28,8 +28,9 @@
         <div class="logo">
           <img src="./src/icons/logo.svg" alt="logo" />
         </div>
+
         <div class="navigation">
-          <nav>
+          <nav id="menu">
             <ul>
               <li><a href="#">Our cabin</a></li>
               <li><a href="#">Get inspired</a></li>
@@ -57,6 +58,7 @@
               />
             </svg>
           </a>
+          <button onclick="toggleMenu()" class="hamburger-menu">☰</button>
         </div>
       </header>
     </div>
@@ -100,6 +102,44 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search">
+      <div class="container search-block">
+        <div class="search-section">
+          <form>
+            <input
+              type="text"
+              class="place"
+              name="place"
+              placeholder="I want to go"
+            />
+
+            <input
+              type="calendar"
+              class="check-in"
+              name="check-in"
+              placeholder="Check in"
+            />
+
+            <input
+              type="calendar"
+              class="check-out"
+              name="check-out"
+              placeholder="Check out"
+            />
+
+            <input
+              type="number"
+              class="travellers"
+              name="travellers"
+              placeholder="Travellers"
+            />
+
+            <button>Find available cabins</button>
+          </form>
         </div>
       </div>
     </div>
@@ -426,15 +466,17 @@
                   For a weekly curated collection of 3 things you can watch,
                   read or listen to switch off from the busy everyday.
                 </p>
-                <div class="newsletter-input-button">
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="james@thegaintpeach.com"
-                  />
-                  <button>Join the mailing list</button>
-                </div>
+                <form>
+                  <div class="newsletter-input-button">
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      placeholder="james@thegaintpeach.com"
+                    />
+                    <button>Join the mailing list</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -460,5 +502,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>
