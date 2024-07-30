@@ -61,7 +61,7 @@ a:hover {
 /* Hero Section */
 
 .hero-section {
-    background-image: linear-gradient(black, grey);
+    /* background-image: linear-gradient(black, grey); */
     background-image: url("../images/Hero-section.png"), linear-gradient(to right, #000B02, #2F2E36 40%);
     background-position: right;
     background-repeat: no-repeat;
@@ -133,6 +133,7 @@ a:hover {
 
 .cards-text p {
     color: #47475F;
+    line-height: 1.3rem;
 }
 
 .cards-text a {
@@ -268,6 +269,131 @@ h3.subtitle {
 }
 
 
+/* Escape section */
+
+.escape-section {
+    background-image: url(../images/image37.png);
+    padding: 11rem 0;
+    background-repeat: no-repeat;
+}
+
+
+.btn {
+    color: #173333;
+    background-color: #D4EEEC;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    min-width: 12rem;
+}
+
+.btn:active {
+    background-color: #F5B963;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0C1011;
+}
+
+.footer-menu h5 {
+    color: #C5FBD8;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: #C1C7CD;
+    font-size: 0.875rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 3rem 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.newsletter-button-block::after {
+    content: '';
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: #346769;
+    margin-top: 4rem;
+}
+
+.newsletter-button-block-inner {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.newsletter-button-block p {
+    color: #EAEAF1;
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+}
+
+.newsletter-input-button button {
+    color: #1F3D3E;
+    background-color: #F5B963;
+    border-radius: 6px;
+    border: none;
+    padding: 0.75rem;
+    min-width: 12rem;
+}
+
+.newsletter-input-button input {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    min-width: 19rem;
+}
+
+.newsletter-input-button {
+    display: flex;
+    gap: 0.75rem;
+}
+
+
+.footer-bottom .logo {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.footer-bottom .logo span {
+    color: #C5FBD8;
+    font-weight: 800;
+}
+
+.footer-bottom p {
+    color: #909EA2;
+    font-size: 0.875rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+
+.social-media-icons {
+    display: flex;
+    gap: 1rem;
+}
+
 
 
 @media screen and (max-width: 720px) {
@@ -299,6 +425,28 @@ h3.subtitle {
     .cards-text {
         flex-direction: column; 
         gap: 1rem;
+    }
+
+    .newsletter-button-block-inner {
+        flex-direction: column;
+    }
+
+    .newsletter-input-button {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .newsletter-button-block p {
+        text-align: center;
+    }
+
+    .newsletter-section h5 {
+        text-align: center;
     }
 
 

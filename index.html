@@ -1,274 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/reset.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./src/css/fonts.css">
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
 
-   
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+
     <title>Travel</title>
-</head>
-<body>
-        <div class="container">
-            <header>
-                <div class="logo">
-                    <img src="./src/icons/logo.svg" alt="logo">
-                </div>
-                <div class="navigation">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Our cabin</a></li>
-                            <li><a href="#">Get inspired</a></li>
-                            <li><a href="#">Gift a stay</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="userIcon">
-                            <svg width="19.500000" height="19.500000" viewBox="0 0 19.5 19.5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>
-                                    Created with Pixso.
-                            </desc>
-                            <defs/>
-                            <path id="Vector" d="M16.43 16.84C17.4 15.93 18.17 14.83 18.7 13.61C19.23 12.39 19.5 11.07 19.5 9.75C19.5 4.36 15.13 0 9.75 0C4.36 0 0 4.36 0 9.75C-0.01 11.07 0.26 12.39 0.79 13.61C1.32 14.83 2.09 15.93 3.06 16.84C4.87 18.55 7.26 19.5 9.75 19.5C12.23 19.5 14.62 18.55 16.43 16.84ZM3.89 15.56C4.59 14.68 5.48 13.97 6.5 13.48C7.51 13 8.62 12.74 9.75 12.75C10.87 12.74 11.98 13 12.99 13.48C14.01 13.97 14.9 14.68 15.6 15.56C14.83 16.33 13.92 16.94 12.92 17.36C11.91 17.78 10.83 18 9.75 18C8.66 18 7.58 17.78 6.57 17.36C5.57 16.94 4.66 16.33 3.89 15.56ZM13.5 6.75C13.5 7.74 13.1 8.69 12.4 9.4C11.69 10.1 10.74 10.5 9.75 10.5C8.75 10.5 7.8 10.1 7.09 9.4C6.39 8.69 6 7.74 6 6.75C6 5.75 6.39 4.8 7.09 4.09C7.8 3.39 8.75 3 9.75 3C10.74 3 11.69 3.39 12.4 4.09C13.1 4.8 13.5 5.75 13.5 6.75Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
-                        </svg>
-                    </a>
-                </div>
-            </header>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="./src/icons/logo.svg" alt="logo" />
         </div>
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li><a href="#">Our cabin</a></li>
+              <li><a href="#">Get inspired</a></li>
+              <li><a href="#">Gift a stay</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="userIcon">
+            <svg
+              width="19.500000"
+              height="19.500000"
+              viewBox="0 0 19.5 19.5"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Vector"
+                d="M16.43 16.84C17.4 15.93 18.17 14.83 18.7 13.61C19.23 12.39 19.5 11.07 19.5 9.75C19.5 4.36 15.13 0 9.75 0C4.36 0 0 4.36 0 9.75C-0.01 11.07 0.26 12.39 0.79 13.61C1.32 14.83 2.09 15.93 3.06 16.84C4.87 18.55 7.26 19.5 9.75 19.5C12.23 19.5 14.62 18.55 16.43 16.84ZM3.89 15.56C4.59 14.68 5.48 13.97 6.5 13.48C7.51 13 8.62 12.74 9.75 12.75C10.87 12.74 11.98 13 12.99 13.48C14.01 13.97 14.9 14.68 15.6 15.56C14.83 16.33 13.92 16.94 12.92 17.36C11.91 17.78 10.83 18 9.75 18C8.66 18 7.58 17.78 6.57 17.36C5.57 16.94 4.66 16.33 3.89 15.56ZM13.5 6.75C13.5 7.74 13.1 8.69 12.4 9.4C11.69 10.1 10.74 10.5 9.75 10.5C8.75 10.5 7.8 10.1 7.09 9.4C6.39 8.69 6 7.74 6 6.75C6 5.75 6.39 4.8 7.09 4.09C7.8 3.39 8.75 3 9.75 3C10.74 3 11.69 3.39 12.4 4.09C13.1 4.8 13.5 5.75 13.5 6.75Z"
+                fill="currentColor"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </header>
+    </div>
 
-        <div class="hero-section">
-            <div class="container">
-                <div class="hero-section-inner">
-                    <div class="hero-section-text">
-                        <h1>Leave the officebehind and <span>unwind</span></h1>
-                        <p>Welcome to our cozy cabin nestled in the heart of the mountains! Our cabin is the perfect getaway for those seeking peace and relaxation in a natural setting.</p>
-                    </div>
-                    <div class="hero-section-social-media">
-                        <div class="hero-section-user-photo">
-                            <img src="./src/images/Ellipse71.png" alt="user photo">
-                            <img src="./src/images/Ellipse72.png" alt="user photo">
-                            <img src="./src/images/Ellipse73.png" alt="user photo">
-                            <img src="./src/images/Ellipse74.png" alt="user photo">
-                            <img src="./src/images/Ellipse75.png" alt="user photo">
-                        </div>
-                        <div class="rating">
-                            <div class="logo-trustpilot">
-                                <a href="#"><img src="./src/images/logo-trustpilot.png" alt="logo trustpilot"></a>
-                            </div>
-                            <div class="rating-stars">
-                                <img src="./src/images/star.png" alt="star">
-                                <img src="./src/images/star.png" alt="star">
-                                <img src="./src/images/star.png" alt="star">
-                                <img src="./src/images/star.png" alt="star">
-                                <img src="./src/images/star.png" alt="star">
-                            </div>
-                            <div class="rating-text">
-                                <p>4.5 / 5</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-section-inner">
+          <div class="hero-section-text">
+            <h1>Leave the officebehind and <span>unwind</span></h1>
+            <p>
+              Welcome to our cozy cabin nestled in the heart of the mountains!
+              Our cabin is the perfect getaway for those seeking peace and
+              relaxation in a natural setting.
+            </p>
+          </div>
+          <div class="hero-section-social-media">
+            <div class="hero-section-user-photo">
+              <img src="./src/images/Ellipse71.png" alt="user photo" />
+              <img src="./src/images/Ellipse72.png" alt="user photo" />
+              <img src="./src/images/Ellipse73.png" alt="user photo" />
+              <img src="./src/images/Ellipse74.png" alt="user photo" />
+              <img src="./src/images/Ellipse75.png" alt="user photo" />
             </div>
-        </div>
-
-
-        <div class="cabin-cards-section">
-            <div class="container">
-                <div class="cabin-cards-inner">
-                    <h3 class="subtitle">Discover our idyllic countryside cabins</h3>
-                    <div class="cards-text">
-                            <p>Fully equipped kitchen and bathroom with plenty of walking and cycling routes to explore.</p>
-                            <a href="#">View all cabins</a>
-                    </div>
-                    <div class="cards">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/cabin1.png" alt="cabin photo">
-                                <div class="heart">
-                                    <svg width="19.500000" height="18.000122" viewBox="0 0 19.5 18.0001" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Vector" d="" fill="#FFFFFF" fill-opacity="0" fill-rule="nonzero"/>
-                                        <path id="Vector" d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                
-                            </div>
-                            <div class="card-text">
-                                <p class="city">Hampshire · England</p>
-                                <div class="title"> 
-                                    <h5 class="caption">Rustic country retreat</h5>
-                                    <p class="price">£210pp</p>
-                                </div>
-                                <p class="description">Step outside and take in the stunning views. Our cabin sits on a quiet and secluded property, providing the perfect setting for a peaceful retreat.</p>
-                                <div class="rating-section">
-                                    <div>
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                    </div>
-                                    <p>82 reviews</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/cabin2.png" alt="cabin photo">
-                                <div class="heart">
-                                    <svg width="19.500000" height="18.000122" viewBox="0 0 19.5 18.0001" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Vector" d="" fill="#FFFFFF" fill-opacity="0" fill-rule="nonzero"/>
-                                        <path id="Vector" d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                
-                            </div>
-                            <div class="card-text">
-                                <p class="city">Norfolk · England</p>
-                                <div class="title"> 
-                                    <h5 class="caption">Cozy getaway cabin</h5>
-                                    <p class="price">£312pp</p>
-                                </div>
-                                <p class="description">Step outside and take in the stunning views. Our cabin sits on a quiet and secluded property, providing the perfect setting for a peaceful retreat. Step outside and take in the stunning views. Step outside and take in the stunning views.</p>
-                                <div class="rating-section">
-                                    <div>
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                    </div>
-                                    <p>82 reviews</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/cabin3.png" alt="cabin photo">
-                                <div class="heart">
-                                    <svg width="19.500000" height="18.000122" viewBox="0 0 19.5 18.0001" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <desc>
-                                                Created with Pixso.
-                                        </desc>
-                                        <defs/>
-                                        <path id="Vector" d="" fill="#FFFFFF" fill-opacity="0" fill-rule="nonzero"/>
-                                        <path id="Vector" d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                
-                            </div>
-                            <div class="card-text">
-                                <p class="city">Hampshire · England</p>
-                                <div class="title"> 
-                                    <h5 class="caption">Rustic country retreat</h5>
-                                    <p class="price">£210pp</p>
-                                </div>
-                                <p class="description">Step outside and take in the stunning views. Our cabin sits on a quiet and secluded property, providing the perfect setting for a peaceful retreat.</p>
-                                <div class="rating-section">
-                                    <div>
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                        <img src="./src/images/vector-star.png" alt="star rating">
-                                    </div>
-                                    <p>82 reviews</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
+            <div class="rating">
+              <div class="logo-trustpilot">
+                <a href="#"
+                  ><img
+                    src="./src/images/logo-trustpilot.png"
+                    alt="logo trustpilot"
+                /></a>
+              </div>
+              <div class="rating-stars">
+                <img src="./src/images/star.png" alt="star" />
+                <img src="./src/images/star.png" alt="star" />
+                <img src="./src/images/star.png" alt="star" />
+                <img src="./src/images/star.png" alt="star" />
+                <img src="./src/images/star.png" alt="star" />
+              </div>
+              <div class="rating-text">
+                <p>4.5 / 5</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-
-
-
-        <div class="inspiration-cards-section">
-            <div class="container">
-                <div class="inspiration-cards-inner">
-                    <h3 class="subtitle">Inspiration for your next getaway</h3>
-                    <div class="cards-text">
-                            <p>We’ve curated some amazing experiences to help you find your next getaway.</p>
-                            <a href="#">View all experiences</a>
-                    </div>
-                    <div class="cards">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/inspiration1.png" alt="inspiration photo">    
-                            </div>
-                            <div class="card-text">
-                                <p class="city">For those who love</p>
-                                <div class="title"> 
-                                    <h5 class="caption">To Explore nature</h5>
-                                </div>
-                                <p class="description">Discover some of the most beautiful scenery – from the wonders of Snowdonia to the famous beauty of the Scottish Highlands.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/inspiration2.png" alt="inspiration photo">
-                            </div>
-                            <div class="card-text">
-                                <p class="city">For those who want</p>
-                                <div class="title"> 
-                                    <h5 class="caption">To Relax, rest & re-set</h5>
-                                </div>
-                                <p class="description">Experience mind and body connection through breathing exercises and relaxation with our Yoga inspired get away for you and the family. </p>
-                            </div>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./src/images/inspiration3.png" alt="inspiration photo">
-                            </div>
-                            <div class="card-text">
-                                <p class="city">For those who have</p>
-                                <div class="title"> 
-                                    <h5 class="caption">Four-legged friends</h5>
-                                </div>
-                                <p class="description">When going on holiday nobody wants to put their dog in a kennel. So, lets keep the family together with our pet friendly cabins.</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
+    <div class="cabin-cards-section">
+      <div class="container">
+        <div class="cabin-cards-inner">
+          <h3 class="subtitle">Discover our idyllic countryside cabins</h3>
+          <div class="cards-text">
+            <p>
+              Fully equipped kitchen and bathroom with plenty of walking and
+              cycling routes to explore.
+            </p>
+            <a href="#">View all cabins</a>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/images/cabin1.png" alt="cabin photo" />
+                <div class="heart">
+                  <svg
+                    width="19.500000"
+                    height="18.000122"
+                    viewBox="0 0 19.5 18.0001"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d=""
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                      fill-rule="nonzero"
+                    />
+                    <path
+                      id="Vector"
+                      d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z"
+                      stroke="#FFFFFF"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.500000"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
+              </div>
+              <div class="card-text">
+                <p class="city">Hampshire · England</p>
+                <div class="title">
+                  <h5 class="caption">Rustic country retreat</h5>
+                  <p class="price">£210pp</p>
+                </div>
+                <p class="description">
+                  Step outside and take in the stunning views. Our cabin sits on
+                  a quiet and secluded property, providing the perfect setting
+                  for a peaceful retreat.
+                </p>
+                <div class="rating-section">
+                  <div>
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                  </div>
+                  <p>82 reviews</p>
+                </div>
+              </div>
             </div>
-        </div>
 
-        
-</body>
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/images/cabin2.png" alt="cabin photo" />
+                <div class="heart">
+                  <svg
+                    width="19.500000"
+                    height="18.000122"
+                    viewBox="0 0 19.5 18.0001"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d=""
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                      fill-rule="nonzero"
+                    />
+                    <path
+                      id="Vector"
+                      d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z"
+                      stroke="#FFFFFF"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.500000"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-text">
+                <p class="city">Norfolk · England</p>
+                <div class="title">
+                  <h5 class="caption">Cozy getaway cabin</h5>
+                  <p class="price">£312pp</p>
+                </div>
+                <p class="description">
+                  Step outside and take in the stunning views. Our cabin sits on
+                  a quiet and secluded property, providing the perfect setting
+                  for a peaceful retreat. Step outside and take in the stunning
+                  views. Step outside and take in the stunning views.
+                </p>
+                <div class="rating-section">
+                  <div>
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                  </div>
+                  <p>82 reviews</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/images/cabin3.png" alt="cabin photo" />
+                <div class="heart">
+                  <svg
+                    width="19.500000"
+                    height="18.000122"
+                    viewBox="0 0 19.5 18.0001"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d=""
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                      fill-rule="nonzero"
+                    />
+                    <path
+                      id="Vector"
+                      d="M14.06 0.75C12.12 0.75 10.46 1.87 9.75 3.48C9.03 1.87 7.37 0.75 5.43 0.75C2.85 0.75 0.75 2.76 0.75 5.25C0.75 12.47 9.75 17.25 9.75 17.25C9.75 17.25 18.75 12.47 18.75 5.25C18.75 2.76 16.65 0.75 14.06 0.75Z"
+                      stroke="#FFFFFF"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.500000"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="card-text">
+                <p class="city">Hampshire · England</p>
+                <div class="title">
+                  <h5 class="caption">Rustic country retreat</h5>
+                  <p class="price">£210pp</p>
+                </div>
+                <p class="description">
+                  Step outside and take in the stunning views. Our cabin sits on
+                  a quiet and secluded property, providing the perfect setting
+                  for a peaceful retreat.
+                </p>
+                <div class="rating-section">
+                  <div>
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                    <img src="./src/images/vector-star.png" alt="star rating" />
+                  </div>
+                  <p>82 reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inspiration-cards-section">
+      <div class="container">
+        <div class="inspiration-cards-inner">
+          <h3 class="subtitle">Inspiration for your next getaway</h3>
+          <div class="cards-text">
+            <p>
+              We’ve curated some amazing experiences to help you find your next
+              getaway.
+            </p>
+            <a href="#">View all experiences</a>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./src/images/inspiration1.png"
+                  alt="inspiration photo"
+                />
+              </div>
+              <div class="card-text">
+                <p class="city">For those who love</p>
+                <div class="title">
+                  <h5 class="caption">To Explore nature</h5>
+                </div>
+                <p class="description">
+                  Discover some of the most beautiful scenery – from the wonders
+                  of Snowdonia to the famous beauty of the Scottish Highlands.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./src/images/inspiration2.png"
+                  alt="inspiration photo"
+                />
+              </div>
+              <div class="card-text">
+                <p class="city">For those who want</p>
+                <div class="title">
+                  <h5 class="caption">To Relax, rest & re-set</h5>
+                </div>
+                <p class="description">
+                  Experience mind and body connection through breathing
+                  exercises and relaxation with our Yoga inspired get away for
+                  you and the family.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./src/images/inspiration3.png"
+                  alt="inspiration photo"
+                />
+              </div>
+              <div class="card-text">
+                <p class="city">For those who have</p>
+                <div class="title">
+                  <h5 class="caption">Four-legged friends</h5>
+                </div>
+                <p class="description">
+                  When going on holiday nobody wants to put their dog in a
+                  kennel. So, lets keep the family together with our pet
+                  friendly cabins.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="escape-section">
+      <div class="container">
+        <div class="hero-section-inner">
+          <div class="hero-section-text">
+            <h1>Escape from endless Zoom calls</h1>
+            <p>
+              Discover the wonders of spending time offline and away from the
+              office with our 3 day weekend getaway cabin retreats.
+            </p>
+          </div>
+          <div class="button">
+            <button class="btn">Find the perfect getaway</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="menu">
+            <div class="footer-menu">
+              <h5>About us</h5>
+              <a href="#">Our story</a>
+              <a href="#">Why us</a>
+              <a href="#">How it works</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div class="footer-menu">
+              <h5>Our cabins</h5>
+              <a href="#">North of London</a>
+              <a href="#">Golden Hideaway</a>
+              <a href="#">Oak Treehouse</a>
+              <a href="#">Acacia Retreat</a>
+              <a href="#">Blue Lagoon</a>
+            </div>
+            <div class="footer-menu">
+              <h5>Get inspired</h5>
+              <a href="#">Hiking trails</a>
+              <a href="#">Swimming</a>
+              <a href="#">Fishing</a>
+              <a href="#">Boating</a>
+              <a href="#">Cycling</a>
+            </div>
+            <div class="footer-menu">
+              <h5>Support</h5>
+              <a href="#">Help</a>
+              <a href="#">Contact us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Complaints Policy</a>
+            </div>
+          </div>
+
+          <div class="newsletter-section footer-menu">
+            <h5>Sign up to our Newsletter</h5>
+            <div class="newsletter-button-block">
+              <div class="newsletter-button-block-inner">
+                <p>
+                  For a weekly curated collection of 3 things you can watch,
+                  read or listen to switch off from the busy everyday.
+                </p>
+                <div class="newsletter-input-button">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="james@thegaintpeach.com"
+                  />
+                  <button>Join the mailing list</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="logo">Unwind<span>cabins</span></p>
+            <p>© 2023 UnwindCabins</p>
+            <div class="social-media-icons">
+              <a href="#"
+                ><img src="./src/images/linkedin.png" alt="linkedin icon"
+              /></a>
+              <a href="#"
+                ><img src="./src/images/facebook.png" alt="facebook icon"
+              /></a>
+              <a href="#"
+                ><img src="./src/images/instagram.png" alt="instagram icon"
+              /></a>
+              <a href="#"
+                ><img src="./src/images/youtube.png" alt="youtube icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
