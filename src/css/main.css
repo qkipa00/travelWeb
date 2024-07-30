@@ -459,6 +459,7 @@ footer {
 .navigation button {
     display: none;
     background-color: #fff;
+    color: #000;
     border: none;
     font-size: 2rem;
     padding-bottom: 5px;
@@ -501,6 +502,7 @@ footer {
         
     }
 
+
     .navigation nav a {
         width: 100%;
         display: block;
@@ -518,7 +520,11 @@ footer {
         display: inline;
     }
 
+    .navigation {
+        gap: 0.2rem;
+    }
 
+   
     .hero-section {
         background-image: linear-gradient(to bottom, #000B02, #2F2E36 40%);
     }
