@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/reset.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./src/css/reset.css" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,25 +21,38 @@
     <link rel="stylesheet" href="./src/css/fonts.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+
     <title>Travel</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div class="max-w-6xl w-full m-auto h-full py-0 px-6">
+      <header class="flex h-24 justify-between items-center">
         <div class="logo">
           <img src="./src/icons/logo.svg" alt="logo" />
         </div>
 
-        <div class="navigation">
-          <nav id="menu">
-            <ul>
+        <div class="flex items-center">
+          <nav id="menu" class="hidden md:flex">
+            <ul class="flex gap-5 flex-col bg-white p-4 absolute w-full left-0 top-24 md:flex-row md:static hover:*:text-[#1b665d]">
               <li><a href="#">Our cabin</a></li>
               <li><a href="#">Get inspired</a></li>
               <li><a href="#">Gift a stay</a></li>
               <li><a href="#">About us</a></li>
             </ul>
           </nav>
-          <a href="#" class="userIcon">
+          <a
+            href="#"
+            class="bg-[#F2FAF9] border border-[#3F3F3F] rounded-full p-2 hover:bg-[#1b665d] hover:text-white mr-2"
+          >
             <svg
               width="19.500000"
               height="19.500000"
@@ -58,47 +72,66 @@
               />
             </svg>
           </a>
-          <button onclick="toggleMenu()" class="hamburger-menu">☰</button>
+          <button onclick="toggleMenu()" class="hamburger-menu md:hidden">☰</button>
         </div>
       </header>
     </div>
 
-    <div class="hero-section">
-      <div class="container">
-        <div class="hero-section-inner">
-          <div class="hero-section-text">
-            <h1>Leave the officebehind and <span>unwind</span></h1>
-            <p>
+    <!-- Hero Section -->
+
+    <div
+      class="bg-right bg-no-repeat py-4 md:py-20 "
+      style="
+        background-image: url('src/images/Hero-section.png'),
+          linear-gradient(to right, #000b02, #2f2e36 40%);
+      "
+    >
+      <div class="max-w-6xl w-full m-auto h-full py-0 px-6">
+        <div class="flex flex-col gap-12 justify-center h-full w-full max-w-xl">
+          <div>
+            <h1 class="text-5xl text-white font-bold mb-5">
+              Leave the officebehind and
+              <span class="text-[#F5B963]">unwind</span>
+            </h1>
+            <p class="text-base text-white">
               Welcome to our cozy cabin nestled in the heart of the mountains!
               Our cabin is the perfect getaway for those seeking peace and
               relaxation in a natural setting.
             </p>
           </div>
-          <div class="hero-section-social-media">
-            <div class="hero-section-user-photo">
-              <img src="./src/images/Ellipse71.png" alt="user photo" />
-              <img src="./src/images/Ellipse72.png" alt="user photo" />
-              <img src="./src/images/Ellipse73.png" alt="user photo" />
-              <img src="./src/images/Ellipse74.png" alt="user photo" />
-              <img src="./src/images/Ellipse75.png" alt="user photo" />
+          <div class="flex items-start gap-10 flex-col md:flex-row md:gap-20 md:items-center">
+            <div class="flex *:-mr-3.5 *:z-10 *:relative hover:*:z-20">
+              <div>
+                <img src="./src/images/Ellipse71.png" alt="user photo" />
+              </div>
+              <div>
+                <img src="./src/images/Ellipse72.png" alt="user photo" />
+              </div>
+              <div>
+                <img src="./src/images/Ellipse73.png" alt="user photo" />
+              </div>
+              <div>
+                <img src="./src/images/Ellipse74.png" alt="user photo" />
+              </div>
+              <div>
+                <img src="./src/images/Ellipse75.png" alt="user photo" />
+              </div>
             </div>
-            <div class="rating">
-              <div class="logo-trustpilot">
-                <a href="#"
-                  ><img
-                    src="./src/images/logo-trustpilot.png"
-                    alt="logo trustpilot"
-                /></a>
+            <div class="flex gap-5">
+              <a class="inline-flex items-center" href="#"
+                ><img
+                  src="./src/images/logo-trustpilot.png"
+                  alt="logo trustpilot"
+              /></a>
+              <div class="flex items-center">
+                <div><img src="./src/images/star.png" alt="star" /></div>
+                <div><img src="./src/images/star.png" alt="star" /></div>
+                <div><img src="./src/images/star.png" alt="star" /></div>
+                <div><img src="./src/images/star.png" alt="star" /></div>
+                <div><img src="./src/images/star.png" alt="star" /></div>
               </div>
-              <div class="rating-stars">
-                <img src="./src/images/star.png" alt="star" />
-                <img src="./src/images/star.png" alt="star" />
-                <img src="./src/images/star.png" alt="star" />
-                <img src="./src/images/star.png" alt="star" />
-                <img src="./src/images/star.png" alt="star" />
-              </div>
-              <div class="rating-text">
-                <p>4.5 / 5</p>
+              <div>
+                <p class="text-white p-1">4.5 / 5</p>
               </div>
             </div>
           </div>
@@ -106,60 +139,107 @@
       </div>
     </div>
 
+    <!-- Search section -->
+
     <div class="search">
-      <div class="container search-block">
+      <div
+        class="max-w-6xl w-full m-auto h-full shadow-lg rounded md:-translate-y-1/2 bg-white p-4"
+      >
         <div class="search-section">
-          <form>
-            <input
-              type="text"
-              class="place"
-              name="place"
-              placeholder="I want to go"
-            />
-
-            <input
-              type="calendar"
-              class="check-in"
-              name="check-in"
-              placeholder="Check in"
-            />
-
-            <input
-              type="calendar"
-              class="check-out"
-              name="check-out"
-              placeholder="Check out"
-            />
-
-            <input
-              type="number"
-              class="travellers"
-              name="travellers"
-              placeholder="Travellers"
-            />
-
-            <button>Find available cabins</button>
+          <form class="grid grid-cols-2 md:grid-cols-7 gap-2">
+            <div class="relative col-span-2">
+              <img
+                src="src/images/Frame.png"
+                alt="map icon"
+                class="absolute top-0 bottom-0 m-auto left-4"
+              />
+              <input
+                type="text"
+                class="w-full box-border border-0 rounded bg-[#EAEAEA] py-3 pr-5 pl-10"
+                name="place"
+                placeholder="I want to go"
+              />
+            </div>
+            <div class="relative">
+              <img
+                src="src/images/calendar.png"
+                alt="calendar icon"
+                class="absolute top-0 bottom-0 m-auto left-4"
+              />
+              <input
+                type="calendar"
+                class="w-full box-border border-0 rounded bg-[#EAEAEA] py-3 pr-5 pl-10"
+                name="check-in"
+                placeholder="Check in"
+              />
+            </div>
+            <div class="relative">
+              <img
+                src="src/images/calendar.png"
+                alt="calendar icon"
+                class="absolute top-0 bottom-0 m-auto left-4"
+              />
+              <input
+                type="calendar"
+                class="w-full box-border border-0 rounded bg-[#EAEAEA] py-3 pr-5 pl-10"
+                name="check-out"
+                placeholder="Check out"
+              />
+            </div>
+            <div class="relative col-span-2 md:col-span-1">
+              <img
+                src="src/images/people.png"
+                alt="people icon"
+                class="absolute top-0 bottom-0 m-auto left-4"
+              />
+              <input
+                type="number"
+                class="w-full box-border border-0 rounded bg-[#EAEAEA] py-3 pr-5 pl-10 "
+                name="travellers"
+                placeholder="Travellers"
+              />
+            </div>
+            <button
+              class="bg-[#233D2C] text-white rounded py-3 px-10 flex-1 col-span-2"
+            >
+              Find available cabins
+            </button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="cabin-cards-section">
-      <div class="container">
+    <!-- Cabin cards section -->
+
+    <div class="px-0 pt-8 pb-12">
+      <div class="max-w-6xl w-full m-auto h-full py-0 px-6">
         <div class="cabin-cards-inner">
-          <h3 class="subtitle">Discover our idyllic countryside cabins</h3>
-          <div class="cards-text">
-            <p>
+          <h3 class="text-[#22223C] text-3xl font-bold mb-2">
+            Discover our idyllic countryside cabins
+          </h3>
+          <div class="w-32 border-b pb-6 border-b-2 border-[#F5B963]"></div>
+          <div class="flex flex-col md:flex-row gap-2 justify-between px-0 pt-8 pb-12">
+            <p class="text-[#47475F]">
               Fully equipped kitchen and bathroom with plenty of walking and
               cycling routes to explore.
             </p>
-            <a href="#">View all cabins</a>
+            <a href="#" class="text-[#4A4A4A] underline hover:no-underline"
+              >View all cabins</a
+            >
           </div>
-          <div class="cards">
-            <div class="card">
-              <div class="card-image">
-                <img src="./src/images/cabin1.png" alt="cabin photo" />
-                <div class="heart">
+          <div class="flex flex-col md:flex-row gap-4">
+            <div
+              class="flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="./src/images/cabin1.png"
+                  alt="cabin photo"
+                  class="w-full"
+                />
+                <div
+                  class="inline-flex bg-black opacity-70 p-2.5 rounded absolute top-2.5 right-2.5"
+                >
                   <svg
                     width="19.500000"
                     height="18.000122"
@@ -188,34 +268,46 @@
                   </svg>
                 </div>
               </div>
-              <div class="card-text">
-                <p class="city">Hampshire · England</p>
-                <div class="title">
-                  <h5 class="caption">Rustic country retreat</h5>
-                  <p class="price">£210pp</p>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">
+                  Hampshire · England
+                </p>
+                <div class="flex justify-between">
+                  <h5 class="text-white font-bold text-xl">
+                    Rustic country retreat
+                  </h5>
+                  <p class="text-white font-semibold">£210pp</p>
                 </div>
-                <p class="description">
+                <p class="text-[#E0F2EB] text-sm my-5 mx-0 grow">
                   Step outside and take in the stunning views. Our cabin sits on
                   a quiet and secluded property, providing the perfect setting
                   for a peaceful retreat.
                 </p>
-                <div class="rating-section">
-                  <div>
+                <div class="flex items-center justify-between">
+                  <div class="flex">
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                   </div>
-                  <p>82 reviews</p>
+                  <p class="text-white ml-4 text-sm">82 reviews</p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-image">
-                <img src="./src/images/cabin2.png" alt="cabin photo" />
-                <div class="heart">
+            <div
+              class="flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="./src/images/cabin2.png"
+                  alt="cabin photo"
+                  class="w-full"
+                />
+                <div
+                  class="inline-flex bg-black opacity-70 p-2.5 rounded absolute top-2.5 right-2.5"
+                >
                   <svg
                     width="19.500000"
                     height="18.000122"
@@ -244,35 +336,47 @@
                   </svg>
                 </div>
               </div>
-              <div class="card-text">
-                <p class="city">Norfolk · England</p>
-                <div class="title">
-                  <h5 class="caption">Cozy getaway cabin</h5>
-                  <p class="price">£312pp</p>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">
+                  Norfolk · England
+                </p>
+                <div class="flex justify-between">
+                  <h5 class="text-white font-bold text-xl">
+                    Cozy getaway cabin
+                  </h5>
+                  <p class="text-white font-semibold">£312pp</p>
                 </div>
-                <p class="description">
+                <p class="text-[#E0F2EB] text-sm my-5 mx-0 grow">
                   Step outside and take in the stunning views. Our cabin sits on
                   a quiet and secluded property, providing the perfect setting
                   for a peaceful retreat. Step outside and take in the stunning
                   views. Step outside and take in the stunning views.
                 </p>
-                <div class="rating-section">
-                  <div>
+                <div class="flex items-center justify-between">
+                  <div class="flex">
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                   </div>
-                  <p>82 reviews</p>
+                  <p class="text-white ml-4 text-sm">82 reviews</p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-image">
-                <img src="./src/images/cabin3.png" alt="cabin photo" />
-                <div class="heart">
+            <div
+              class="flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden"
+            >
+              <div class="relative">
+                <img
+                  src="./src/images/cabin3.png"
+                  alt="cabin photo"
+                  class="w-full"
+                />
+                <div
+                  class="inline-flex bg-black opacity-70 p-2.5 rounded absolute top-2.5 right-2.5"
+                >
                   <svg
                     width="19.500000"
                     height="18.000122"
@@ -301,26 +405,30 @@
                   </svg>
                 </div>
               </div>
-              <div class="card-text">
-                <p class="city">Hampshire · England</p>
-                <div class="title">
-                  <h5 class="caption">Rustic country retreat</h5>
-                  <p class="price">£210pp</p>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">
+                  Hampshire · England
+                </p>
+                <div class="flex justify-between">
+                  <h5 class="text-white font-bold text-xl">
+                    Rustic country retreat
+                  </h5>
+                  <p class="text-white font-semibold">£210pp</p>
                 </div>
-                <p class="description">
+                <p class="text-[#E0F2EB] text-sm my-5 mx-0 grow">
                   Step outside and take in the stunning views. Our cabin sits on
                   a quiet and secluded property, providing the perfect setting
                   for a peaceful retreat.
                 </p>
-                <div class="rating-section">
-                  <div>
+                <div class="flex items-center justify-between">
+                  <div class="flex">
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                     <img src="./src/images/vector-star.png" alt="star rating" />
                   </div>
-                  <p>82 reviews</p>
+                  <p class="text-white ml-4 text-sm">82 reviews</p>
                 </div>
               </div>
             </div>
@@ -329,50 +437,57 @@
       </div>
     </div>
 
-    <div class="inspiration-cards-section">
-      <div class="container">
+    <!-- Inspiration cards section -->
+
+    <div class="bg-[#F2FAF9] px-0 py-12">
+      <div class="max-w-6xl w-full m-auto h-full py-0 px-6">
         <div class="inspiration-cards-inner">
-          <h3 class="subtitle">Inspiration for your next getaway</h3>
-          <div class="cards-text">
-            <p>
+          <h3 class="text-[#22223C] text-3xl font-bold mb-2">
+            Inspiration for your next getaway
+          </h3>
+          <div class="w-32 border-b pb-6 border-b-2 border-[#F5B963]"></div>
+          <div class="flex justify-between flex-col md:flex-row gap-2 px-0 pt-8 pb-12">
+            <p class="text-[#47475F]">
               We’ve curated some amazing experiences to help you find your next
               getaway.
             </p>
-            <a href="#">View all experiences</a>
+            <a href="#" class="text-[#4A4A4A] underline hover:no-underline">View all experiences</a>
           </div>
-          <div class="cards">
-            <div class="card">
-              <div class="card-image">
+          <div class="flex gap-4 flex-col md:flex-row">
+            <div class="bg-[#596363] flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden">
+              <div class="relative">
                 <img
                   src="./src/images/inspiration1.png"
                   alt="inspiration photo"
+                  class="w-full"
                 />
               </div>
-              <div class="card-text">
-                <p class="city">For those who love</p>
-                <div class="title">
-                  <h5 class="caption">To Explore nature</h5>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">For those who love</p>
+                <div>
+                  <h5 class="text-white font-bold text-xl mb-3.5">To Explore nature</h5>
                 </div>
-                <p class="description">
+                <p class="text-white">
                   Discover some of the most beautiful scenery – from the wonders
                   of Snowdonia to the famous beauty of the Scottish Highlands.
                 </p>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-image">
+            <div class="bg-[#596363] flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden"">
+              <div class="relative">
                 <img
                   src="./src/images/inspiration2.png"
                   alt="inspiration photo"
+                  class="w-full"
                 />
               </div>
-              <div class="card-text">
-                <p class="city">For those who want</p>
-                <div class="title">
-                  <h5 class="caption">To Relax, rest & re-set</h5>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">For those who want</p>
+                <div>
+                  <h5 class="text-white font-bold text-xl mb-3.5">To Relax, rest & re-set</h5>
                 </div>
-                <p class="description">
+                <p class="text-white">
                   Experience mind and body connection through breathing
                   exercises and relaxation with our Yoga inspired get away for
                   you and the family.
@@ -380,19 +495,20 @@
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-image">
+            <div class="bg-[#596363] flex flex-col flex-1 bg-[#2B3030] rounded overflow-hidden"">
+              <div class="relative">
                 <img
                   src="./src/images/inspiration3.png"
                   alt="inspiration photo"
+                  class="w-full"
                 />
               </div>
-              <div class="card-text">
-                <p class="city">For those who have</p>
-                <div class="title">
-                  <h5 class="caption">Four-legged friends</h5>
+              <div class="flex flex-col grow py-3.5 px-5">
+                <p class="text-[#D7FFF1] uppercase text-xs mb-2">For those who have</p>
+                <div>
+                  <h5 class="text-white font-bold text-xl mb-3.5">Four-legged friends</h5>
                 </div>
-                <p class="description">
+                <p class="text-white">
                   When going on holiday nobody wants to put their dog in a
                   kennel. So, lets keep the family together with our pet
                   friendly cabins.
@@ -404,87 +520,92 @@
       </div>
     </div>
 
-    <div class="escape-section">
-      <div class="container">
-        <div class="hero-section-inner">
-          <div class="hero-section-text">
-            <h1>Escape from endless Zoom calls</h1>
-            <p>
+<!-- Escape section -->
+
+    <div class="bg-[url('src/images/image37.png')] px-0 py-52 bg-no-repeat bg-cover">
+      <div class="max-w-6xl w-full m-auto h-full py-0 px-6">
+        <div class="max-w-lg">
+          <div>
+            <h1 class="text-5xl text-white font-bold mb-5">Escape from endless Zoom calls</h1>
+            <p class="text-base text-white mb-10">
               Discover the wonders of spending time offline and away from the
               office with our 3 day weekend getaway cabin retreats.
             </p>
           </div>
-          <div class="button">
-            <button class="btn">Find the perfect getaway</button>
+          <div>
+            <button class="text-[#173333] bg-[#D4EEEC] p-3 rounded-md border-none min-w-48 active:bg-[#F5B963]">Find the perfect getaway</button>
           </div>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="footer-inner">
-          <div class="menu">
-            <div class="footer-menu">
-              <h5>About us</h5>
-              <a href="#">Our story</a>
-              <a href="#">Why us</a>
-              <a href="#">How it works</a>
-              <a href="#">FAQ</a>
+<!-- Footer -->
+
+    <footer class="bg-[#0C1011]">
+      <div class="max-w-6xl w-full m-auto h-full py-0 px-6"> 
+          <div class="grid grid-cols-2 md:grid-cols-4">
+            <div class="flex flex-col gap-2 mx-0 my-4">
+              <h5 class="text-[#C5FBD8] font-semibold mb-4">About us</h5>
+              <a href="#" class="text-[#C1C7CD] text-sm">Our story</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Why us</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">How it works</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">FAQ</a>
             </div>
-            <div class="footer-menu">
-              <h5>Our cabins</h5>
-              <a href="#">North of London</a>
-              <a href="#">Golden Hideaway</a>
-              <a href="#">Oak Treehouse</a>
-              <a href="#">Acacia Retreat</a>
-              <a href="#">Blue Lagoon</a>
+            <div class="flex flex-col gap-2 mx-0 my-4">
+              <h5 class="text-[#C5FBD8] font-semibold mb-4">Our cabins</h5>
+              <a href="#" class="text-[#C1C7CD] text-sm">North of London</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Golden Hideaway</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Oak Treehouse</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Acacia Retreat</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Blue Lagoon</a>
             </div>
-            <div class="footer-menu">
-              <h5>Get inspired</h5>
-              <a href="#">Hiking trails</a>
-              <a href="#">Swimming</a>
-              <a href="#">Fishing</a>
-              <a href="#">Boating</a>
-              <a href="#">Cycling</a>
+            <div class="flex flex-col gap-2 mx-0 my-4">
+              <h5 class="text-[#C5FBD8] font-semibold mb-4">Get inspired</h5>
+              <a href="#" class="text-[#C1C7CD] text-sm">Hiking trails</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Swimming</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Fishing</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Boating</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Cycling</a>
             </div>
-            <div class="footer-menu">
-              <h5>Support</h5>
-              <a href="#">Help</a>
-              <a href="#">Contact us</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Complaints Policy</a>
+            <div class="flex flex-col gap-2 mx-0 my-4">
+              <h5 class="text-[#C5FBD8] font-semibold mb-4">Support</h5>
+              <a href="#" class="text-[#C1C7CD] text-sm">Help</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Contact us</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Privacy Policy</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Terms of Service</a>
+              <a href="#" class="text-[#C1C7CD] text-sm">Complaints Policy</a>
             </div>
           </div>
 
-          <div class="newsletter-section footer-menu">
-            <h5>Sign up to our Newsletter</h5>
+          <div class="newsletter-section footer-menu mt-10">
+            <h5 class="text-[#C5FBD8] font-semibold mb-4">Sign up to our Newsletter</h5>
             <div class="newsletter-button-block">
-              <div class="newsletter-button-block-inner">
-                <p>
+              <div class="flex gap-12 md:items-center flex-col md:flex-row">
+                <p class="text-[#EAEAF1] text-sm ">
                   For a weekly curated collection of 3 things you can watch,
                   read or listen to switch off from the busy everyday.
                 </p>
                 <form>
-                  <div class="newsletter-input-button">
+                  <div class="flex gap-3 flex-col md:flex-row">
                     <input
                       type="text"
                       id="email"
                       name="email"
                       placeholder="james@thegaintpeach.com"
+                      class="p-3 rounded-md border-none min-w-72"
                     />
-                    <button>Join the mailing list</button>
+                    <button class="text-[#1F3D3E] bg-[#F5B963] rounded-md border-none p-3 min-w-48">Join the mailing list</button>
                   </div>
                 </form>
               </div>
+              <div class="border-b pb-6 border-b-2 border-[#346769] mt-12"></div>
             </div>
           </div>
 
-          <div class="footer-bottom">
-            <p class="logo">Unwind<span>cabins</span></p>
-            <p>© 2023 UnwindCabins</p>
-            <div class="social-media-icons">
+          <div class="flex justify-between py-8 px-0 flex-col gap-4 items-center md:flex-row">
+            <p class="text-white font-semibold uppercase text-2xl">Unwind<span class="text-[#C5FBD8] font-extrabold">cabins</span></p>
+            <p class="text-[#909EA2] text-sm">© 2023 UnwindCabins</p>
+            <div class="flex gap-4">
               <a href="#"
                 ><img src="./src/images/linkedin.png" alt="linkedin icon"
               /></a>
@@ -499,7 +620,6 @@
               /></a>
             </div>
           </div>
-        </div>
       </div>
     </footer>
 
